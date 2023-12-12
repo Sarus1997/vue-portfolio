@@ -14,7 +14,6 @@ import PresentationCounter from "./Sections/PresentationCounter.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
-import PresentationTools from "./Sections/PresentationTools.vue";
 
 //images
 import vueMkHeader from "@/assets/img/header/mitchell-luo.jpg";
@@ -68,9 +67,8 @@ onUnmounted(() => {
   </Header>
 
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-    <PresentationCounter />
     <PresentationInformation />
-    <PresentationTools />
+    <PresentationCounter />
     <PresentationExample :data="data" />
 
     <div
@@ -160,26 +158,19 @@ onUnmounted(() => {
         <div class="row">
           <div class="col-lg-5 ms-auto">
             <h4 class="mb-1">ช่องทางการติดต่อ</h4>
-            <p class="lead mb-0">We deliver the best web products</p>
           </div>
           <div class="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
             <MaterialSocialButton
-              route="#"
-              component="twitter"
-              color="twitter"
-              label="Tweet"
-            />
-            <MaterialSocialButton
-              route="#"
+              route="https://www.facebook.com/saharat.suwannapapond.7"
               component="facebook-square"
               color="facebook"
-              label="Share"
+              label="FB"
             />
             <MaterialSocialButton
-              route="#"
-              component="pinterest"
-              color="pinterest"
-              label="Pin it"
+              route="https://www.instagram.com/sr_sarus/"
+              component="instagram"
+              color="instagram"
+              label="IG"
             />
           </div>
         </div>
@@ -192,22 +183,23 @@ onUnmounted(() => {
             <h4 class="mb-1">ที่อยู่</h4>
             <ul style="list-style: none">
               <li>
-                <i class="fas fa-address-book"></i>
+                <i class="fas fa-map-marker-alt"></i>
                 : 86 ม.6 ต.นิคมพัฒนา อ.มะนัง จ.สตูล 91130
               </li>
               <li>
-                <i class="fas fa-address-book"></i>
-                : 86 ม.6 ต.นิคมพัฒนา อ.มะนัง จ.สตูล 91130
+                <i class="fas fa-envelope"></i>
+                : saharat.rus@gmail.com
               </li>
               <li>
-                <i class="fas fa-address-book"></i>
-                : 86 ม.6 ต.นิคมพัฒนา อ.มะนัง จ.สตูล 91130
+                <i class="fas fa-phone"></i>
+                : 086-9728283
               </li>
             </ul>
           </div>
           <div class="col-lg-6 ms-auto">
             <h4 class="mb-1">แผนที่</h4>
-            <p class="lead mb-0">We deliver the best web products</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3960.4660914156657!2d99.880845725818!3d6.954216768006583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d6.9541907!2d99.8838718!4m3!3m2!1d6.9541667!2d99.88386109999999!5e0!3m2!1sth!2sth!4v1702349177862!5m2!1sth!2sth" width="100%" height="350" allowFullScreen="" loading="lazy" title="Google Map"></iframe>
           </div>
         </div>
       </div>
